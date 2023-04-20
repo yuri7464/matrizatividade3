@@ -1,0 +1,27 @@
+programa
+{
+   
+    funcao inicio()
+    {
+        inteiro matriz[6][6], maior = 0
+
+   
+    para(inteiro linha = 0; linha < 6; linha++){
+      para(inteiro coluna = 0; coluna < 6; coluna++){
+        escreva("Digite o valor da posição [", linha, "][", coluna, "]: ")
+        leia(matriz[linha][coluna])
+        se (matriz[linha][coluna] > 10){
+            maior = maior +1
+        }
+      }
+    }
+    limpa()
+     para(inteiro linha = 0; linha < 6; linha++){
+      para(inteiro coluna = 0; coluna < 6; coluna++){
+          escreva("[", matriz[linha][coluna], "]")
+      }
+      escreva("\n")
+      }
+    escreva ("\nForam escritos ", maior," números maiores do que 10.\n")
+}
+}
